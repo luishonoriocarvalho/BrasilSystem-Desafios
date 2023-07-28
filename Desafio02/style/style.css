@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.header {
+  background-color: #404040;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.navImg {
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+
+.navTitle {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.formContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.formDisplay {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputGroup {
+  width: 50%;
+  display: flex;
+  padding-right: 5em;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.mainTitle {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.labelText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.buttonForm {
+  background-color: #4E4FEB;
+  width: 8rem;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+#clockContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+#timer {
+  width: 60px;
+  height: 40px;
+  background-color: #4E4FEB;
+  color: white;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sectioTitle {
+  font-family: "Roboto", sans-serif;
+}
+
+.btnRemove {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navImg {
+    width: 2rem;
+  }
+  .navTitle {
+    font-size: 0.85em;
+  }
+  .inputGroup {
+    width: 70%;
+    padding-right: 0em;
+  }
+}
+@media (max-width: 520px) {
+  .navImg {
+    width: 1.5rem;
+  }
+  .navTitle {
+    font-size: 0.6em;
+  }
+  .mainTitle {
+    width: 90%;
+    margin-left: 1em;
+  }
+  .formContainer {
+    width: 90%;
+    margin-left: 2em;
+  }
+  .inputGroup {
+    width: 80%;
+  }
+  .section {
+    width: 90%;
+    overflow-x: scroll;
+  }
+  .sectioTitle {
+    margin-left: 1rem;
+  }
+  #requestTable {
+    font-size: 0.6em;
+  }
+}/*# sourceMappingURL=style.css.map */

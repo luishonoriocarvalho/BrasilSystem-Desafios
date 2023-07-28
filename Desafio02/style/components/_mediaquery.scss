@@ -1,0 +1,55 @@
+@media (max-width: 768px){
+    .navImg{
+        width: 2rem;
+    }
+    
+    .navTitle{
+        font-size: 0.85em;
+    }
+
+    .inputGroup {
+        width: 70%;
+        padding-right: 0em;
+    }
+}
+
+@media (max-width: 520px){
+    .navImg{
+        width: 1.5rem;
+    }
+    
+    .navTitle{
+        font-size: 0.6em;
+    }
+
+    .mainTitle{
+        width: 90%;
+        margin-left: 1em;
+    }
+    .formContainer{
+        width: 90%;
+        margin-left: 2em;
+    }
+
+    .inputGroup {
+        width: 80%;
+        
+    }
+
+    .section{
+        width: 90%;
+        overflow-x: scroll;
+    }
+
+    .sectioTitle{
+        margin-left: 1rem;
+    }
+
+    #requestTable{
+        font-size: 0.60em;
+    }
+
+}
+
+
+

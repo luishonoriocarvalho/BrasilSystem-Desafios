@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiSoli</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="index.js" defer></script>
+    <script src="removeRow.js" defer></script>
+    <script src="time.js" defer></script>
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">
+                <h1 class="navTitle"><img src="img/logo.png" alt="Logo SiSoLi" class="navImg">Sistema para Solicitação de Livros - SiSoLi</h1>
+            </span>
+            </div>
+          </nav>
+    </header>
+    <main class="mainContainer">
+        <div id="clockContainer">
+            <div id="timer"></div>
+        </div>
+        <h2 class="mainTitle">Solicitação de Livros</h2>
+        <div class="formContainer">
+            <form id="requestForm"  class="formDisplay">
+                <div class="inputGroup">
+                    <label class="labelText mb-1" for="bookType">Selecione vinculo</label>
+                        <select class="mb-1 inputText"  name="bookType" id="bookType">
+                            <option value="" hidden >Selecione um vinculo</option>
+                            <option value="Docente">Docente</option>
+                            <option value="Discente">Discente</option>
+                            <option value="Tecnico">Técnico</option>
+                        </select>
+                </div>
+                <div class="inputGroup">
+                    <label class="labelText mb-1" for="bookTitle" class="teste">Título</label>
+                    <input class="inputText px-2 mb-1" type="text" name="bookTitle" id="bookTitle" placeholder="Digite o titulo do livro">
+                </div>
+                <div class="inputGroup">
+                    <label class="labelText mb-1" for="bookAuthor">Autor</label>
+                    <input class="inputText px-2 mb-1" type="text" name="bookAuthor" id="bookAuthor" placeholder="Digite o autor do livro">
+                </div>
+                <div class="inputGroup">
+                    <label class="labelText" for="bookEdition">Edição</label>
+                    <input class="inputText px-2 mb-1" type="number" name="bookEdition" id="bookEdition" placeholder="Digite a edição do livro">
+                </div>
+                <div class="inputGroup">
+                    <label class="labelText mb-1" for="bookIssn">ISSN</label>
+                    <input class="inputText px-2 mb-1" type="number" name="bookIssn" id="bookIssn" placeholder="Digite o issn do livro">
+                </div>
+                <div class="inputGroup">
+                    <label class="labelText mb-1" for="bookYear">Ano</label>
+                    <input class="inputText px-2 mb-1" type="number" name="bookYear" id="bookYear" min="1900" max="2019" placeholder="Digite o ano de publicação">
+                </div>
+                <div class="inputGroup">
+                    <label class="labelText mb-1" for="publishingCompany">Editora</label>
+                        <input class="inputText px-2 mb-1" type="text" name="publishingCompany" id="publishingCompany" placeholder="Digite a editora do livro">
+                        <button class="buttonForm my-3" id="buttomForm" type="submit">Solicitar Livro</button>
+                </div>
+                
+            </form>
+
+        </div>
+    </main>
+
+    <section class="section">
+        <h2 class="sectioTitle">Tabela de Solicitação</h2>
+        <hr>
+        <table id="requestTable" class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="table-th">Vínculo</th>
+                    <th class="table-th">Título</th>
+                    <th class="table-th">Autor</th>
+                    <th class="table-th">Edição</th>
+                    <th class="table-th">ISSN</th>
+                    <th class="table-th">Ano</th>
+                    <th class="table-th">Editora</th>
+                </tr>
+            </thead>
+        </table>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
+</body>
+</html>

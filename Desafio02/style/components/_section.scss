@@ -1,0 +1,14 @@
+@import '../abstract/variable';
+
+.section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sectioTitle{
+    font-family: $maint-text;
+}
+
+.btnRemove{
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+@import '../abstract/variable';
+
+.formContainer{
+    width: 80%;
+    margin: auto;
+}
+
+.formDisplay{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputGroup {
+    width: 50%;
+    display: flex;
+    padding-right: 5em;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+
+.mainTitle{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem; 
+    font-family: $maint-text;
+}
+
+
+
+.labelText{
+    font-family: $tittle-text;
+    font-weight: 600;
+}
+
+.buttonForm{
+    background-color: $button-color;
+    width: 8rem;
+    color: $white-text;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+
+#clockContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+#timer{
+    width: 60px;
+    height: 40px;
+    background-color: $button-color;
+    color: $white-text;
+    border-radius: 5px;
+    font-family: $maint-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

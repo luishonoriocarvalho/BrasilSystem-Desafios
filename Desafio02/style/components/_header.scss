@@ -1,0 +1,20 @@
+@import '../abstract/variable';
+
+.header{
+    background-color: $nav-color;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 1rem;   
+}
+
+.navImg{
+    width: 3.5rem;
+    margin-right: 1rem;
+}
+
+.navTitle{
+    color: $white-text;
+    font-family: $tittle-text;
+    font-size: 1.5em;
+    font-weight: 600;
+}
